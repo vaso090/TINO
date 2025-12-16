@@ -1,0 +1,211 @@
+<<<<<<< HEAD
+/* =========================
+   GLOBAL RESET
+   ========================= */
+=======
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+<<<<<<< HEAD
+  color: rgba(6, 128, 6, 0.808);
+  background: rgba(7, 165, 228, 0.616);
+}
+
+/* =========================
+   SCREENS
+   ========================= */
+=======
+  color: grey;
+  background: rgba(135, 207, 235, 0.586);
+}
+
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.screen {
+  min-height: 100vh;
+  width: 100%;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+<<<<<<< HEAD
+/* =========================
+   GAME TITLE (TINO)
+   ========================= */
+.game-title {
+  margin: 0;
+  font-family: 'Baloo 2', system-ui, sans-serif; /* eco / playful font */
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: clamp(42px, 9vw, 72px);
+  line-height: 0.95;
+  text-shadow: 0 8px 18px rgba(21, 21, 22, 0.527);
+}
+
+/* თითო ასო ცალკე */
+.game-title .letter {
+  display: inline-block; /* transform რომ იმუშაოს */
+}
+
+/* subtle hand-made არეულობა */
+.game-title .l1 {
+  transform: rotate(-6deg) translateY(4px);
+}
+
+.game-title .l2 {
+  transform: rotate(4deg) translateY(-4px);
+}
+
+.game-title .l3 {
+  transform: rotate(-3deg) translateY(3px);
+}
+
+.game-title .l4 {
+  transform: rotate(6deg) translateY(-3px);
+}
+
+/* =========================
+   SLOGAN
+   ========================= */
+.game-slogan {
+  display: block;
+  margin-top: 6px;                 /* TINO-სთან ოდნავ ახლოს */
+  font-size: clamp(12px, 3vw, 16px);/* ოდნავ დაპატარავებული */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  text-align: center;              /* ზუსტად ცენტრში */
+}
+
+/* =========================
+   LOADER
+   ========================= */
+=======
+.game-title {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: clamp(42px, 9vw, 72px);
+  text-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.loading-text {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.95;
+}
+
+.loader {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 10px solid sienna;
+<<<<<<< HEAD
+  border-top-color: peru; /* გასწორებული */
+=======
+  border-top: color red;
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+<<<<<<< HEAD
+
+/* =========================
+   START BUTTON
+   ========================= */
+=======
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.start-btn {
+  border: 0;
+  cursor: pointer;
+  padding: 18px 56px;
+  border-radius: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: clamp(20px, 4.5vw, 28px);
+<<<<<<< HEAD
+  background: linear-gradient(180deg, #1806b8 0%, #0b6fd3 100%);
+  color: #ffffffd2;
+  box-shadow: 0 14px 0 rgba(0, 0, 0, 0.2),
+              0 18px 28px rgba(0, 0, 0, 0.25);
+  transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
+}
+
+.start-btn:hover {
+  filter: brightness(1.06);
+}
+
+=======
+  background: linear-gradient(180deg, #1fb0ff 0%, #0b6fd3 100%);
+  color: #fff;
+  box-shadow: 0 14px 0 rgba(0, 0, 0, 0.2), 0 18px 28px rgba(0, 0, 0, 0.25);
+  transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
+}
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.start-btn:active {
+  transform: translateY(3px);
+  filter: brightness(0.95);
+}
+<<<<<<< HEAD
+
+=======
+.start-btn:hover {
+  filter: brightness(1.06);
+}
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.start-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: grayscale(0.25);
+  transform: none;
+}
+
+<<<<<<< HEAD
+/* =========================
+   GAME SCREEN PLACEHOLDER
+   ========================= */
+=======
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
+.game h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+<<<<<<< HEAD
+}
+=======
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> 0d9a0736e88baae3854ce096a1780a15c07c13b9
